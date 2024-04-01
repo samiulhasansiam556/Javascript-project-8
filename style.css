@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+
+body{
+    background-color: rgb(128, 173, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.weather-app{
+    background-color: rgb(207, 222, 235);
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 10px;
+    border-radius: 15px;
+    height: 450px;
+    box-shadow: 0px 3px 8px rgb(79, 95, 215);
+
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+input[type="text"]{
+    width: 300px;
+    padding: 12px;
+    border:2px solid blue;;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.search-btn{
+    background-color: rgb(62, 62, 165);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+.search-btn:hover{
+    background-color: blueviolet;
+}
+
+.city-date-section{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.city-date-section .city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city-date-section .date{
+   background-color: rgb(244, 244, 220);
+   padding: 5px 10px;
+   border-radius: 15px;
+
+}
+
+.tempareture-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.tempareture-info .tem{
+    font-size: 5rem;
+
+}
+
+.tempareture-info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+    ;
+}
+.tempareture-info .description i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+ 
+}
+.tempareture-info .description span{
+    font-size: 1.5rem;
+    
+ 
+}
+.additional-info {
+    margin-top: 20px;
+
+    display: flex;
+    height: 120px;
+    
+    justify-content: space-around;
+}
+
+.wind-info,.humidity-info,.visibility-info{
+    background-color: rgb(162, 209, 250);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 8px;
+    border-radius: 15px;
+    height: 90px;
+    gap:5px;
+    box-shadow: 0px 3px 8px black;
+}
+
+.additional-info .material-icons{
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+
+
+.wind-info,.humidity-info,.visibility-info div{
+    text-align: center;
+}
+
+body{
+    position: relative;
+}
+
+
+#yourName{
+
+     color: brown;
+     position: absolute;
+     top: 78vh;
+     left: 43%;
+     font-size: 1rem;
+
+}
